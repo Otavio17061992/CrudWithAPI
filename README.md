@@ -31,12 +31,11 @@ Uso
 Endpoints da API
 A API possui os seguintes endpoints:
 
-GET /api/nome-da-entidade: Recupera todos os registros da entidade.
-GET /api/nome-da-entidade/{id}: Recupera um registro específico pelo ID.
-POST /api/nome-da-entidade: Cria um novo registro.
-PUT /api/nome-da-entidade/{id}: Atualiza um registro existente pelo ID.
-DELETE /api/nome-da-entidade/{id}: Exclui um registro pelo ID.
-Substitua "nome-da-entidade" pelo nome da entidade real usada em seu projeto.
+GET /api/contato: Recupera todos os registros da entidade.
+GET /api/contato/{id}: Recupera um registro específico pelo ID.
+POST /api/contato: Cria um novo registro.
+PUT /api/contato/{id}: Atualiza um registro existente pelo ID.
+DELETE /api/contato/{id}: Exclui um registro pelo ID.
 
 Exemplo de Requisições
 Aqui estão alguns exemplos de como fazer chamadas de API usando o cURL:
