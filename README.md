@@ -43,11 +43,11 @@ Aqui estão alguns exemplos de como fazer chamadas de API usando o cURL:
 GET Todos os Registros:
 bash
 Copy code
-curl -X GET http://localhost:5000/api/nome-da-entidade
+curl -X GET http://localhost:5000/api/contato
 GET Um Registro por ID:
 bash
 Copy code
-curl -X GET http://localhost:5000/api/nome-da-entidade/1
+curl -X GET http://localhost:5000/api/contato/1
 POST Novo Registro:
 bash
 Copy code
@@ -55,7 +55,7 @@ curl -X POST -H "Content-Type: application/json" -d '{"Nome": "valor1", "Telefon
 PUT Atualizar Registro Existente:
 bash
 Copy code
-curl -X PUT -H "Content-Type: application/json" -d '{"propriedade1": "novo-valor"}' http://localhost:5000/api/contato
+curl -X PUT -H "Content-Type: application/json" -d '{"ID": "novo-valor"}' http://localhost:5000/api/contato
 DELETE Registro por ID:
 bash
 Copy code
