@@ -14,21 +14,19 @@ Para executar este projeto em sua máquina, você precisará das seguintes ferra
 
 ## Instalação
 
-1. Clone este repositório para sua máquina local.
-
-```bash
+Git Clone:
+Primeiro, clone o repositório com o seguinte comando:
 git clone https://github.com/Otavio17061992/CrudWithAPI
-Abra o projeto no Visual Studio.
 
-Certifique-se de que as configurações de conexão com o banco de dados no arquivo appsettings.json estão corretas.
-
-Execute o aplicativo para iniciar a API.
-
-bash
-Copy code
+Abra o Projeto no Visual Studio:
+Abra o Visual Studio e carregue o projeto que você acabou de clonar.
+Configurações de Conexão com o Banco de Dados:
+Verifique se as configurações de conexão com o banco de dados no arquivo appsettings.json estão corretas. Isso é importante para garantir que a API se comunique corretamente com o banco de dados.
+Execute o Aplicativo:
+Execute o aplicativo para iniciar a API. Você pode fazer isso usando o seguinte comando:
 dotnet run
+
 Uso
-Endpoints da API
 A API possui os seguintes endpoints:
 
 GET /api/contato: Recupera todos os registros da entidade.
@@ -36,30 +34,24 @@ GET /api/contato/{id}: Recupera um registro específico pelo ID.
 POST /api/contato: Cria um novo registro.
 PUT /api/contato/{id}: Atualiza um registro existente pelo ID.
 DELETE /api/contato/{id}: Exclui um registro pelo ID.
-
 Exemplo de Requisições
 Aqui estão alguns exemplos de como fazer chamadas de API usando o cURL:
 
 GET Todos os Registros:
-bash
-Copy code
 curl -X GET http://localhost:5000/api/contato
+
 GET Um Registro por ID:
-bash
-Copy code
 curl -X GET http://localhost:5000/api/contato/1
+
 POST Novo Registro:
-bash
-Copy code
 curl -X POST -H "Content-Type: application/json" -d '{"Nome": "valor1", "Telefone": "valor2", "Ativo": "valor3"}' http://localhost:5000/api/contato
+
 PUT Atualizar Registro Existente:
-bash
-Copy code
 curl -X PUT -H "Content-Type: application/json" -d '{"ID": "novo-valor"}' http://localhost:5000/api/contato
+
 DELETE Registro por ID:
-bash
-Copy code
 curl -X DELETE http://localhost:5000/api/id
+
 Contribuições
 Contribuições são bem-vindas! Se você encontrar algum problema ou tiver sugestões para melhorias, sinta-se à vontade para criar uma issue ou enviar um pull request.
 
@@ -67,9 +59,6 @@ Licença
 Este projeto é licenciado sob a Licença MIT. Consulte o arquivo LICENSE para obter mais detalhes.
 
 Autor
-[Joao Otavio]
-[joaodevelopercsharp@gmail.com]
-
-
+[João Otávio] [joaodevelopercsharp@gmail.com]
 csharp
 Copy code
